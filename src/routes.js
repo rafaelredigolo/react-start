@@ -6,6 +6,9 @@ import CoursesPage from './components/course/CoursesPage';
 import ManageCoursePage from './components/course/ManageCoursePage'; //eslint-disable-line import/no-named-as-default
 import AboutPage from './components/about/AboutPage';
 
+import ModeloPage from './components/modelo/ModeloPage';
+import ManageModeloPage from './components/modelo/ManageModeloPage';
+
 export default (
   <Route path="/" component={App}>
     <IndexRoute component={HomePage}/>
@@ -13,5 +16,8 @@ export default (
     <Route path="course/:id" component={ManageCoursePage}/>
     <Route path="course" component={ManageCoursePage}/>
     <Route path="about" component={AboutPage}/>
+    <Route path="modelos" component={ModeloPage}/>
+    <Route path="modelo" component={ManageModeloPage}/>
+    <Route path="modelo/:id" component={ManageModeloPage}/>
   </Route>
 );
